@@ -1,0 +1,298 @@
+<html class="scroll-smooth" lang="pt-BR" style="scroll-behavior:smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>
+        Rhodium
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+        body {
+            font-family: "VT323", monospace;
+            background-color: #000;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section-title {
+            font-family: "VT323", monospace;
+            font-weight: 700;
+            font-size: 2rem;
+            letter-spacing: 0.15em;
+            color: #0ff;
+            text-transform: uppercase;
+            border-bottom: 2px solid #0ff;
+            padding-bottom: 0.25rem;
+            margin-bottom: 1rem;
+            text-shadow:
+                0 0 5px #0ff,
+                0 0 10px #0ff,
+                0 0 20px #0ff,
+                0 0 40px #0ff;
+        }
+
+        .btn-download {
+            font-family: "VT323", monospace;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+            background-color: #0ff;
+            color: black;
+            border-radius: 0.375rem;
+            padding: 0.75rem 1.5rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: 2px solid #0ff;
+            box-shadow:
+                0 0 5px #0ff,
+                0 0 10px #0ff,
+                0 0 20px #0ff,
+                0 0 40px #0ff;
+            display: inline-block;
+        }
+
+        .btn-download:hover {
+            background-color: black;
+            color: #0ff;
+            border-color: #0ff;
+            box-shadow:
+                0 0 10px #0ff,
+                0 0 20px #0ff,
+                0 0 30px #0ff,
+                0 0 40px #0ff;
+        }
+
+        .section-border {
+            border: 2px solid #0ff;
+            border-radius: 0.75rem;
+            background-color: #111;
+            color: #0ff;
+            box-shadow:
+                0 0 5px #0ff,
+                0 0 10px #0ff,
+                0 0 20px #0ff;
+        }
+
+        .text-mono {
+            font-family: "VT323", monospace;
+        }
+
+        header {
+            background-color: #111;
+            border-bottom: 2px solid #0ff;
+        }
+
+        header h1 {
+            color: #0ff;
+            text-shadow:
+                0 0 5px #0ff,
+                0 0 10px #0ff,
+                0 0 20px #0ff;
+        }
+
+        nav a {
+            color: #ccc;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #0ff;
+            text-shadow:
+                0 0 5px #0ff,
+                0 0 10px #0ff;
+        }
+
+        footer {
+            border-top: 2px solid #0ff;
+            color: #0ff;
+            text-shadow:
+                0 0 5px #0ff,
+                0 0 10px #0ff;
+        }
+
+        ul li strong {
+            color: #0ff;
+            text-shadow:
+                0 0 5px #0ff,
+                0 0 10px #0ff;
+        }
+
+        ul li {
+            margin-bottom: 0.3rem;
+        }
+
+        .icon {
+            width: 1.2rem;
+            display: inline-block;
+            text-align: center;
+            margin-right: 0.5rem;
+            color: #0ff;
+            text-shadow:
+                0 0 5px #0ff,
+                0 0 10px #0ff;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="flex items-center justify-between px-6 py-4 select-none">
+        <div class="flex items-center gap-3">
+            <img alt="Ícone do aplicativo Rhodium, fundo preto com letra R ciano neon" class="w-8 h-8" height="32"
+                src="icon.png" width="32" />
+            <h1 class="text-2xl font-bold font-mono tracking-widest">
+                Rhodium
+            </h1>
+        </div>
+        <nav class="flex gap-6 font-mono font-semibold text-sm uppercase tracking-widest">
+            <a href="#sobre">
+                Sobre
+            </a>
+            <a href="#funcionalidades">
+                Funcionalidades
+            </a>
+            <a href="#download">
+                Download
+            </a>
+            <a href="#contato">
+                Contato
+            </a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="px-6 py-12 max-w-5xl mx-auto text-center">
+        <h2 class="section-title">
+            Bem-vindo ao Rhodium
+        </h2>
+        <p class="text-mono text-lg max-w-3xl mx-auto mb-8 text-cyan-400">
+            O Rhodium é o aplicativo definitivo para organizar seu workspace, gerenciar PDFs, notas, ferramentas e muito
+            mais. Tudo em um só lugar, com design minimalista preto e branco para máxima concentração.
+        </p>
+        <a class="btn-download" href="#download">
+            Baixe Agora
+        </a>
+    </section>
+    <!-- Sobre Section -->
+    <section class="px-6 max-w-5xl mx-auto mb-12 section-border p-8" id="sobre">
+        <h3 class="section-title">
+            Sobre o Rhodium
+        </h3>
+        <p class="text-mono text-base leading-relaxed text-cyan-400">
+            O Rhodium é um app focado em produtividade, que oferece um workspace completo para você organizar suas
+            tarefas, documentos e anotações. Com uma interface limpa em preto e branco, ele ajuda a manter o foco e a
+            eficiência.
+        </p>
+    </section>
+    <!-- Funcionalidades Section -->
+    <section class="px-6 max-w-5xl mx-auto mb-12 section-border p-8" id="funcionalidades">
+        <h3 class="section-title">
+            Funcionalidades
+        </h3>
+        <ul class="list-disc list-inside text-mono text-base text-cyan-400">
+            <li>
+                <strong>
+                    Workspace:
+                </strong>
+                Organize seus projetos e documentos em um só lugar.
+            </li>
+            <li>
+                <strong>
+                    Analisador PDF:
+                </strong>
+                Resuma PDFs diretamente no app.
+            </li>
+            <li>
+                <strong>
+                    Notas:
+                </strong>
+                Crie e gerencie notas rápidas e detalhadas.
+            </li>
+            <li>
+                <strong>
+                    Ferramentas:
+                </strong>
+                Acesse utilitários para aumentar sua produtividade.
+            </li>
+            <li>
+                <strong>
+                    IA Assistente:
+                </strong>
+                Tenha um assistente inteligente para ajudar nas tarefas.
+            </li>
+            <li>
+                <strong>
+                    Configurações:
+                </strong>
+                Personalize o app conforme suas necessidades.
+            </li>
+            <li>
+                <strong>
+                    Biblioteca:
+                </strong>
+                Armazene e acesse seus arquivos facilmente.
+            </li>
+            <li>
+                <strong>
+                    Funcionalidades Extras:
+                </strong>
+                Recursos adicionais para facilitar seu dia a dia.
+            </li>
+        </ul>
+    </section>
+    <!-- Download Section -->
+    <section class="px-6 max-w-5xl mx-auto mb-12 section-border p-8 text-center" id="download">
+        <h3 class="section-title">
+            Download
+        </h3>
+        <p class="text-mono text-base mb-6 text-cyan-400">
+            Disponível para Windows, macOS e Linux. Clique no botão abaixo para baixar a versão mais recente do Rhodium.
+        </p>
+        <a class="btn-download" download="" href="https://seulink.digital/PURSA3gx">
+            Baixar Rhodium
+        </a>
+        <p class="text-mono text-base mb-6 text-cyan-400">
+            Ou utilize a versão web:
+        </p>
+        <a class="btn-download" href="https://mxlsc-xxx.github.io/Rhodium/" rel="noopener noreferrer" target="_blank">
+            Acessar Versão Web
+        </a>
+    </section>
+    <!-- Contato Section -->
+    <section class="px-6 max-w-5xl mx-auto mb-12 section-border p-8" id="contato">
+        <h3 class="section-title">
+            Contato
+        </h3>
+        <p class="text-mono text-base mb-4 text-cyan-400">
+            Tem dúvidas ou sugestões? Entre em contato conosco:
+        </p>
+        <ul class="text-mono text-base text-cyan-400 space-y-2">
+            <li>
+                <i class="fas fa-envelope icon"></i>
+                mxlsc@proton.me
+            </li>
+            <li>
+                <i class="fas fa-phone icon"></i>
+                +55 13 97414-0538
+            </li>
+        </ul>
+    </section>
+    <!-- Footer -->
+    <footer
+        class="border-t-2 border-cyan-400 py-4 text-center font-mono text-sm uppercase tracking-widest text-cyan-400">
+        © 2025 Rhodium. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
